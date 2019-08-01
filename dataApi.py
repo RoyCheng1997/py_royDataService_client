@@ -6,9 +6,10 @@ Data API
 
 import requests
 import pandas as pd
+import numpy as np
 
 PATH = "http://data.natapp1.cc"
-nan, NaN = "NAN", "NAN"
+nan, NaN = np.nan, np.nan
 
 def getFuturesData(futures, start, end, freq, datatype, token, database='uqer'):
     '''Get Futures Data'''
