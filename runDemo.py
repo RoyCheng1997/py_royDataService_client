@@ -5,9 +5,8 @@ Data Service Run Demo
 
 import dataApi
 
-TOKEN = ''
-def main():
-    df = dataApi.getFuturesData('A', '2018-05-01', '2019-05-01', '1_w', datatype='memberVolume',database='fushare',token=TOKEN)
-    print(df.head())
+TOKEN = 'xN48CyrWiod1OyRZVRZ3J826l8KLUZFCs52WbtQszR8w8KrbLt'
 
-main()
+df = dataApi.getFuturesData('IF', '2019-07-01', '2019-08-02', '1_m', datatype='compare',database='ChenCheng',token=TOKEN)
+print(df.head())
+
