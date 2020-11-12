@@ -7,6 +7,5 @@ import dataApi
 
 TOKEN = 'T3ZRzqjcPVxO2P9MEhFvEZRHSJ6lXjqpu6WoknKEZsHqAU26Bv'
 
-df = dataApi.getFuturesData('IF', '2019-07-01', '2019-08-02', '30_m', datatype='compare',adjustS=False,token=TOKEN)
+df = dataApi.getFuturesData('M000', '2019/1/11', '2019/5/11', '1_d', datatype='tradingData',adjustS=True,token=TOKEN)
 print(df.head())
-
